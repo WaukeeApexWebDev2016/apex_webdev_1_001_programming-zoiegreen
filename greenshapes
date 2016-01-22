@@ -1,0 +1,122 @@
+<?php
+//Made by: Zoie Green
+
+
+//Intro
+echo("\nArea Shape Finder\n");
+echo
+("        _____    /\    __
+       |_____|  /__\  |__|
+     ");
+echo("Shapes To Choose From:\n
+ Rectangle\n
+ Square\n
+ Triangle\n
+ Circle\n
+ Parallelogram\n
+ Trapezoid\n
+ Kite\n
+ \n
+ Exit\n
+ \n");
+
+
+
+//Functions
+function rectangle ($rectbase, $rectheight) {
+  return $rectbase * $rectheight;
+}
+
+function square ($sqside1, $sqside2) {
+  return $sqside1 * $sqside2;
+}
+
+function triangle ($trbase, $trheight) {
+  return ($trbase * $trheight) / 2;
+}
+
+function circle ($cradius) {
+  echo M_PI * $cradius;
+  return ($cradius * $cradius) * M_PI;
+}
+
+function para ($pabase, $paheight) {
+  return $pabase * $paheight;
+}
+
+function trapezoid ($trbase1, $trbase2, $trheight) {
+  return (($trbase1 + $trbase2) / 2) * $trheight;
+}
+
+function kite ($lengtha, $lengthd) {
+  return ($lengtha * $lengthd) / 2;
+}
+
+
+//Code
+do {
+
+
+$shape = readline("Enter Your Shape: ");
+
+echo ("Chosen Shape: ") . $shape . "\n";
+
+
+if ($shape == "Rectangle") {
+  $rectbase = readline("Enter Base: ");
+  $rectheight = readline("Enter Height: ");
+  echo "The Area Is: " . rectangle($rectbase, $rectheight) . "\n";
+}
+
+else if ($shape == "Square") {
+  $sqside1 = readline("Enter Side 1: ");
+  $sqside2 = readline("Enter Side 2: ");
+  echo "The Area Is: " . square ($sqside1, $sqside2) . "\n";
+}
+
+else if ($shape == "Triangle") {
+  $trbase = readline("Enter Base: ");
+  $trheight = readline("Enter Height: ");
+  echo "The Area Is: " . triangle($trbase, $trheight) . "\n";
+}
+
+else if ($shape == "Circle") {
+  $cradius = readline("Enter Radius: ");
+  echo "The Area Is: ";
+  echo circle($cradius);
+  echo "\n";
+}
+
+else if ($shape == "Parallelogram") {
+  $pabase = readline("Enter Base: ");
+  $paheight = readline("Enter Height: ");
+  echo "The Area Is: " . para($pabase, $paheight) . "\n";
+}
+
+else if ($shape == "Trapezoid") {
+  $trbase1 = readline("Enter Base 1: ");
+  $trbase2 = readline("Enter Base 2: ");
+  $trheight = readline("Enter Height: ");
+  echo "The Area Is: " . trapezoid($trbase1, $trbase2, $trheight) . "\n";
+}
+
+else if ($shape == "Kite") {
+  $lengtha = readline("Enter Length Across: ");
+  $lengthd = readline("Enter Length Down: ");
+  echo "The Area Is: " . kite($lengtha, $lengthd) . "\n";
+}
+
+else if ($shape == "Exit"){
+  echo "Program Exited. Thank You!\n";
+}
+
+else {
+  echo "This is not an acceptable shape! Sorry.\n";
+}
+
+
+} while ($shape !="Exit")
+
+
+
+?>

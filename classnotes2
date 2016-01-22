@@ -1,0 +1,97 @@
+<?php
+$name = readline("Enter your name: ");
+
+
+echo "Hello: " . $name . "\n";
+
+$myNumber = 5;
+$other = 9;
+
+echo $myNumber * $other;
+
+echo "\n";
+
+
+echo var_dump(true and true);
+echo var_dump(true and false);
+echo var_dump(!false);
+
+if (true) {
+echo "yes\n";
+}
+
+if (false) {
+  echo "yes2\n";
+}
+
+$username = readline("Enter your username: ");
+if ($username == "admin") {
+  echo "you are admin";
+}
+
+
+echo var_dump(true and true);
+echo var_dump(true and false);
+echo var_dump(!false);
+
+if (true) {
+echo "yes\n";
+}
+
+if (false) {
+  echo "yes2\n";
+}
+
+$username = readline("Enter your username: ");
+if ($username == "admin") {
+  echo "you are admin";
+} else if ($username =="zoie") {
+    echo "you are Zoie";
+}else {
+  echo "access denied";
+}
+
+if () {
+
+}
+
+function sub ($first, $second) {
+  return $first - $second;
+
+}
+
+echo sub(5, 1);
+
+$result = sub(10, 9);
+
+echo "Your result: " . $result;
+
+
+function hardmath($x, $y, $z) {
+
+  $b = $x + $y;
+
+  return $b * $z;
+
+}
+echo hardmath (1, 2, 9);
+
+
+
+function areaofrect($base, $height) {
+  return $base * $height;
+
+}
+
+echo areaofrect(5, 5);
+
+//notes
+// ask user for Shape
+// ask user for shape inputs
+// if square, ask for side
+// triangle, ask for base and height
+// if circle, ask for radius
+// output calculated area
+
+// square, triangle, regular polygon, circle
+?>

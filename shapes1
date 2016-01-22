@@ -1,0 +1,29 @@
+<?php
+
+
+print "Shape Area Finder <br/>";
+
+
+<form>
+Rectangle
+<br>
+Enter Length: <br>
+<input type="number" name="length"
+<br>
+<br> Enter Width: <br>
+<input type="number" name="width" <br>
+<br>
+<input type="submit" value="Calculate Area"> <br>
+</form>
+
+print "The Area Is: $area"
+
+
+<form>
+Circle
+<br>
+Enter Radius: <br>
+<input type="number" name="Radius"
+</form>
+
+?>
